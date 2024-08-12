@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura Revendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header class="cabecalho">
+    <div class="container">
+        <h1>Natura Revendas</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a onclick="abrirPedidos()">Pedidos</a></li>
+                <li><a onclick="divAdicionarPedidos()" id="btn">Adicionar produtos</a></li>
+                <li><a href="">&#10005; Fechar aba</a></li>    
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id="divPedidos">
+    <h2 id="pedido2" >Pedidos</h2>
+    <form target="_blank" action="https://formsubmit.co/kaellbrayanbom@gmail.com" method="POST">
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col">
+              <input type="text" name="name" placeholder="Nome Completo" required>
+            </div>
+            <div class="col">
+              <input type="text" name="telefone" placeholder="Número de telefone" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Seu pedido" name="message" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+      </form>
+</div>
+
+<div id="divAdicionarProdutos">
+    <h2>Adicionar Produtos</h2>
+    <p>Nome:</p>
+    <input type="text" id="nomeProduto" placeholder="Exemplo: Perfume Natura">
+
+    <p>Preço:</p>
+    <input type="text" id="precoProduto" placeholder="Exemplo: 59,00">
+
+
+    <p>Imagem:</p>
+    <input type="file" id="imagemProduto" >
+
+    <button type="button" class="btn" onclick="add()">Adicionar Produto</button>
+</div>
+
+<section id="home" class="secao">
+    <div class="container">
+        <h2>Bem-vindo à Natura Revendas!</h2>
+        <p>Descubra uma seleção especial de produtos Natura com desconto imperdível <br> que vai desde desodorante roll on
+             e kits de perfumaria até itens de maquiagem, como batom e lápis de olho</p>
+    </div>
+</section>
+    
+<section id="produtos" class="secao">
+    <div class="container">
+        <h2>Nossos Produtos</h2>
+        <div class="adicionar">
+           
+        </div>
+
+</section>
+
+<script src="teste.js"></script>
+
+</body>
+</html>

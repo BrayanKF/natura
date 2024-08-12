@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cabecalho {
+    background: linear-gradient(to bottom, #b3ff00, #537407);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #6a9700;
+}
+
+.secao {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.secao h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.categoria {
+    margin-bottom: 40px;
+}
+
+textarea {
+    width: 279px;
+    height: 150px;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+.categoria h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.adicionar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.produto {
+    flex-basis: calc(25% - 20px); 
+    max-width: calc(25% - 20px);
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto .imagem-produto {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.produto .imagem-produto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover .imagem-produto img {
+    transform: scale(1.1);
+}
+
+.info-produto {
+    text-align: center;
+}
+
+.info-produto h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.info-produto p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #6a9700;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #84bd00;
+}
+
+#contato {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border: 2px solid #84bd00;
+}
+
+#contato h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contato label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+#contato input, #contato select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#contato button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #6a9700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+#contato button:hover {
+    background-color: #84bd00;
+}
+
+#divPedidos {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    background-color: #84bd00;
+    border-radius: 8px;
+    opacity: 87%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#divAdicionarProdutos {
+    background-color: #84bd00;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    position: relative;
+}
+
+#divAdicionarProdutos h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#divAdicionarProdutos p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+#divAdicionarProdutos input[type="text"], #divAdicionarProdutos select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#divAdicionarProdutos .btn {
+    background-color: #fff;
+    color: #000000;
+    border: 2px solid #84bd00;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#divAdicionarProdutos .btn:hover {
+    background-color: #84bd00;
+    color: #fff;
+}
+
+#divAdicionarProdutos input[type="file"] {
+    margin-bottom: 20px;
+}
+
+#divAdicionarProdutos input[type="file"]::-webkit-file-upload-button {
+    padding: 10px 20px;
+    background-color: #6a9700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#divAdicionarProdutos input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #84bd00;
+}
+
+@media (max-width: 1024px) {
+    .produto {
+        flex-basis: calc(33.333% - 20px); /* Três colunas */
+        max-width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .produto {
+        flex-basis: calc(50% - 20px); /* Duas colunas */
+        max-width: calc(50% - 20px);
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    #contato input, #contato select {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        flex-basis: 100%; /* Uma coluna */
+        max-width: 100%;
+    }
+
+    .cabecalho h1 {
+        font-size: 2.5rem;
+    }
+
+    .secao h2 {
+        font-size: 2rem;
+    }
+
+    .categoria h3 {
+        font-size: 1.5rem;
+    }
+
+    .info-produto h3 {
+        font-size: 1.2rem;
+    }
+
+    .info-produto p {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+}
